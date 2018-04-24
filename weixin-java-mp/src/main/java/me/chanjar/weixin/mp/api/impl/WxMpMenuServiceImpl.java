@@ -32,7 +32,7 @@ public class WxMpMenuServiceImpl implements WxMpMenuService {
       url = API_URL_PREFIX + "/addconditional";
     }
 
-    log.debug("开始创建菜单 ：{}", menuJson);
+    log.debug("开始创建菜单  ：{}", menuJson);
 
     String result = this.wxMpService.post(url, menuJson);
     log.debug("创建菜单：{},结果：{}", menuJson, result);
